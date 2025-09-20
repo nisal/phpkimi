@@ -1,4 +1,24 @@
 <?php
+/*
+How to use
+Save the file as haiku.php in an empty folder.
+Replace sk-xxxxxxxx… with your real Kimi API key.    
+
+https://platform.moonshot.ai/console/api-keys
+
+Run:
+php -S localhost:8000
+# then open http://localhost:8000/haiku.php in browser
+or simply
+php haiku.php   # CLI also works; it will keep self-refreshing)
+Let it walk through the 371 topics.
+Browser tab will auto-reload every second; CLI will loop immediately.
+When finished you’ll see the celebratory message and the SQLite file haikuclock.sqlite containing every haiku ready for whatever you want to do next.
+
+*/
+
+
+
 /*  –––  CONFIG  –––  */
 $API_KEY      = 'sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'; // ⚠️  YOUR KEY
 $DB_FILE      = __DIR__ . '/haikuclock.sqlite';
